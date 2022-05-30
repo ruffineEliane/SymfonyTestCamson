@@ -47,6 +47,11 @@ class BlogController extends AbstractController
      * Content-Type header for the response.
      * See https://symfony.com/doc/current/routing.html#special-parameters
      */
+    public function list()
+    {
+        // ...
+    }
+
     public function index(Request $request, int $page, string $_format, PostRepository $posts, TagRepository $tags): Response
     {
         $tag = null;
